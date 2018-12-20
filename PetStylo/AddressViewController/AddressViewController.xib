@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressViewController" customModule="PetStylo" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonAddAddress" destination="FsA-eM-ZM5" id="vtg-SF-A4i"/>
+                <outlet property="emptyLabel" destination="fAo-Uh-IaZ" id="fbU-Ha-qXa"/>
+                <outlet property="tableVieeAddress" destination="ucK-kP-nha" id="f7p-lH-Ygg"/>
+                <outlet property="totalAddressCount" destination="J9a-qq-yMX" id="99k-Os-raX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlq-y0-qK4">
+                    <rect key="frame" x="0.0" y="40" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="5iw-dw-Sjq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZI-s7-cQR">
+                    <rect key="frame" x="0.0" y="40" width="375" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9a-qq-yMX">
+                            <rect key="frame" x="47" y="-10" width="170" height="40"/>
+                            <color key="backgroundColor" red="0.96862745100000003" green="0.65098039220000004" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Ka5-xN-kW1"/>
+                                <constraint firstAttribute="width" constant="170" id="t2n-8n-JpU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88235294119999996" green="0.87450980389999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="J9a-qq-yMX" firstAttribute="leading" secondItem="BZI-s7-cQR" secondAttribute="leading" constant="47" id="SuR-IS-q5J"/>
+                        <constraint firstItem="J9a-qq-yMX" firstAttribute="top" secondItem="BZI-s7-cQR" secondAttribute="top" constant="-10" id="Ywc-v6-Yly"/>
+                        <constraint firstAttribute="height" constant="40" id="h9x-i1-xkM"/>
+                    </constraints>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There is no address right now.Please add one address." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAo-Uh-IaZ">
+                    <rect key="frame" x="47" y="275" width="281" height="116"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="116" id="Auh-bq-TVN"/>
+                        <constraint firstAttribute="width" constant="281" id="BeU-Jw-AbA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OV7-wS-w16">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.65098039215686276" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="8tp-XV-JVt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="140" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ucK-kP-nha">
+                    <rect key="frame" x="0.0" y="80" width="375" height="537"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="w2C-TF-laZ"/>
+                        <outlet property="delegate" destination="-1" id="XJs-hx-eZU"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsA-eM-ZM5">
+                    <rect key="frame" x="95.5" y="627" width="184" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="184" id="Ayd-Cu-B6P"/>
+                        <constraint firstAttribute="height" constant="30" id="RQi-7F-S0Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="+  Add New Address">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addAddressWithSender:" destination="-1" eventType="touchUpInside" id="qGL-Yy-74x"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fAo-Uh-IaZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3ji-Hg-BAb"/>
+                <constraint firstItem="BZI-s7-cQR" firstAttribute="top" secondItem="mlq-y0-qK4" secondAttribute="bottom" id="4GY-ME-GSl"/>
+                <constraint firstItem="BZI-s7-cQR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6oS-2R-m7i"/>
+                <constraint firstItem="mlq-y0-qK4" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7rt-jt-OFk"/>
+                <constraint firstItem="mlq-y0-qK4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Gus-wa-lbP"/>
+                <constraint firstItem="ucK-kP-nha" firstAttribute="top" secondItem="BZI-s7-cQR" secondAttribute="bottom" id="HMY-YH-IWk"/>
+                <constraint firstItem="fAo-Uh-IaZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Hdb-yX-9Ba"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FsA-eM-ZM5" secondAttribute="bottom" constant="10" id="KFe-YT-vKt"/>
+                <constraint firstItem="ucK-kP-nha" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Mcg-7M-b4a"/>
+                <constraint firstItem="OV7-wS-w16" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="SlT-zd-tXK"/>
+                <constraint firstItem="OV7-wS-w16" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Woa-gI-bUu"/>
+                <constraint firstItem="BZI-s7-cQR" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="YyZ-bg-gzD"/>
+                <constraint firstItem="mlq-y0-qK4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="c6j-PI-0vT"/>
+                <constraint firstItem="ucK-kP-nha" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cKc-gd-t1K"/>
+                <constraint firstItem="OV7-wS-w16" firstAttribute="top" secondItem="ucK-kP-nha" secondAttribute="bottom" id="hrQ-88-imr"/>
+                <constraint firstItem="FsA-eM-ZM5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rfU-y3-zg0"/>
+                <constraint firstItem="OV7-wS-w16" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zGL-7U-bgc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

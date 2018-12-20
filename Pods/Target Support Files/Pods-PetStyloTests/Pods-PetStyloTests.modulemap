@@ -1,0 +1,6 @@
+framework module Pods_PetStyloTests {
+  umbrella header "Pods-PetStyloTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

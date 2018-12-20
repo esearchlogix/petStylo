@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IS_MEASUREMENT_ENABLED</key>
+	<string>NO</string>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>511788370271-f82t9fdrd5jbk8ad5gkrf5psnrre4j0t.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.511788370271-f82t9fdrd5jbk8ad5gkrf5psnrre4j0t</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA8_RGE19ERVlvvIh1nPV0R6lzUV0gnNmw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>511788370271</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Alekh.PetStylo</string>
+	<key>PROJECT_ID</key>
+	<string>petstylo-d4119</string>
+	<key>STORAGE_BUCKET</key>
+	<string>petstylo-d4119.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:511788370271:ios:5ef03ad513e01615</string>
+	<key>DATABASE_URL</key>
+	<string>https://petstylo-d4119.firebaseio.com</string>
+</dict>
+</plist>
